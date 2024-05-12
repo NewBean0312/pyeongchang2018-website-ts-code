@@ -1,0 +1,40 @@
+$max-width: 1132px;
+
+.container {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.cfixed::after,
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.divider {
+  width: 90%;
+  min-width: $max-width;
+  margin: 0 auto;
+  margin-top: 77px;
+  background-color: #eee;
+}
+
+.slider {
+  img {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+}
