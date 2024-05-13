@@ -1,0 +1,56 @@
+@import "../assets/color.scss";
+
+// slider css
+.slider {
+  img {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+// display css
+.display-section {
+  margin-top: 59px;
+  text-align: center;
+
+  .sec-tit {
+    margin-bottom: 30px;
+  }
+
+  .desc {
+    font-family: "PT Serif";
+    color: $text-color;
+    line-height: 1.9;
+  }
+}
+
+// promotion css
+.promotion-section {
+  margin-top: 68px;
+  .promo-list li {
+    margin-top: 52px;
+    text-align: center;
+    i {
+      font-size: 100px;
+      color: $main-color;
+    }
+
+    h3 {
+      margin: 29px 0 20px 0;
+      color: $main-color;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: "PT Serif";
+      color: $text-color;
+      line-height: 1.5;
+    }
+  }
+
+  li:first-child {
+    margin-top: 0;
+  }
+}
