@@ -3,8 +3,11 @@ import Header from "../components/common/Header";
 import Slider from "../components/Slider";
 import Display from "../components/Display";
 import Promotion from "../components/Promotion";
+import Work from "../components/Work";
+import "../styles/Main.scss";
 
-const MainPage = () => {
+const MainPage:React.FC = () => {
+
   return (
     <>
       <Header />
@@ -12,6 +15,8 @@ const MainPage = () => {
       <div className="content">
         <Display />
         <Promotion />
+        <hr className="divider" />
+        <Work />
       </div>
     </>
   );

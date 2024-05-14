@@ -345,12 +345,3 @@ summary {
 template {
   display: none;
 }
-
-/* custom */
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}

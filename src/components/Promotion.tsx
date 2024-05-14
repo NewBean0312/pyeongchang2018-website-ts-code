@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGripfire } from "@fortawesome/free-brands-svg-icons";
 import "../styles/Main.scss";
 import "../styles/MainContent.scss";
+import {
+  faEarthAmericas,
+  faMedal,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Promotion = () => {
   return (
@@ -11,7 +16,7 @@ const Promotion = () => {
         <ul className="promo-list">
           <li>
             <a href="#none">
-              <FontAwesomeIcon icon={faGripfire} />
+              <FontAwesomeIcon icon={faGripfire} className="promo-logo" />
             </a>
             <h3>올림픽 정신</h3>
             <p>
@@ -21,7 +26,7 @@ const Promotion = () => {
           </li>
           <li>
             <a href="#none">
-              <FontAwesomeIcon icon={faGripfire} />
+              <FontAwesomeIcon icon={faUserGroup} className="promo-logo" />
             </a>
             <h3>평화</h3>
             <p>
@@ -31,7 +36,7 @@ const Promotion = () => {
           </li>
           <li>
             <a href="#none">
-              <FontAwesomeIcon icon={faGripfire} />
+              <FontAwesomeIcon icon={faMedal} className="promo-logo" />
             </a>
             <h3>스포츠</h3>
             <p>
@@ -41,7 +46,7 @@ const Promotion = () => {
           </li>
           <li>
             <a href="#none">
-              <FontAwesomeIcon icon={faGripfire} />
+              <FontAwesomeIcon icon={faEarthAmericas} className="promo-logo" />
             </a>
             <h3>국제</h3>
             <p>
