@@ -4,6 +4,7 @@ import Slider from "../components/Slider";
 import Display from "../components/Display";
 import Promotion from "../components/Promotion";
 import Work from "../components/Work";
+import News from "../components/News";
 import "../styles/Main.scss";
 
 const MainPage:React.FC = () => {
@@ -17,6 +18,8 @@ const MainPage:React.FC = () => {
         <Promotion />
         <hr className="divider" />
         <Work />
+        <hr className="m-divider"/>
+        <News />
       </div>
     </>
   );

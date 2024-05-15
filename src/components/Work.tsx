@@ -57,15 +57,15 @@ const Work: React.FC = () => {
                 <h3>{work.workName}</h3>
                 <img
                   src={work.infoSrc}
-                  alt="info01-img"
-                  className={`info-img${index}`}
+                  alt={`info-img${index}`}
+                  className="info-img"
                 />
                 <span>DEFINITION / SCHEDULE</span>
               </div>
               <img
                 src={work.workSrc}
-                alt="work01-img"
-                className={`work-img${index}`}
+                alt={`work-img${index}`}
+                className="work-img"
               />
             </a>
           </li>
