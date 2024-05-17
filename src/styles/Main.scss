@@ -45,4 +45,13 @@ $max-width: 1132px;
   background-color: $main-color;
 }
 
+// 태블릿용 css
+@media all and (min-width: 768px) {
+  .divider {
+    margin-top: 124px;
+  }
 
+  .m-divider {
+    margin-top: 124px;
+  }
+}
