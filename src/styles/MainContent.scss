@@ -286,3 +286,76 @@ $max-width: 1132px;
     }
   }
 }
+
+@media all and (min-width: 1132px) {
+  // display css
+  .display-section {
+    text-align: left;
+
+    .sec-tit {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    .desc {
+      position: relative;
+      float: right;
+      padding-left: 20px;
+      font-family: "PT Serif";
+      color: $text-color;
+      line-height: 1.9;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 2px;
+        height: 44px;
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  // promotion css
+  .promotion-section {
+    .promo-list {
+      li {
+        width: 23.674912%; // 268px ÷ 1132px
+        margin-left: 1.766784%; // 20px ÷ 1132px
+      }
+    }
+  }
+
+  // work css
+  .work-section {
+    .sec-tit {
+      text-align: left;
+    }
+
+    .work-list {
+      li {
+        width: 25%;
+      }
+    }
+  }
+
+  // news css
+  .news-section {
+    .sec-tit {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    .news-list {
+      float: right;
+      width: 74.558304%; // 844px ÷ 1132px
+
+      li {
+        width: 31.753555%; // 268px ÷ 844px 
+        margin-left: 2.369669%; // 20px ÷ 844px 
+      }
+    }
+  }
+}
