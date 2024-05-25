@@ -1,6 +1,18 @@
 import React from "react";
 import "../../styles/Main.scss";
 import "../../styles/Header.scss";
+import { GnbList } from "../../model/header";
+
+// Gnb list data
+let headerGnbList: GnbList = {
+  list: [
+    { name: "HOME" },
+    { name: "NEWS" },
+    { name: "PLAYER" },
+    { name: "EVENT" },
+    { name: "CONTACT US" },
+  ],
+};
 
 const Header: React.FC = () => {
   return (
@@ -10,21 +22,11 @@ const Header: React.FC = () => {
       </h1>
       <nav>
         <ul className="gnb">
-          <li>
-            <a href="#none">HOME</a>
-          </li>
-          <li>
-            <a href="#none">NEWS</a>
-          </li>
-          <li>
-            <a href="#none">PLAYER</a>
-          </li>
-          <li>
-            <a href="#none">EVENT</a>
-          </li>
-          <li>
-            <a href="#none">CONACT US</a>
-          </li>
+          {headerGnbList.list.map((data, index) => (
+            <li key={index}>
+              <a href="#none">{data.name}</a>
+            </li>
+          ))}
         </ul>
       </nav>
       <span className="menu-toggle-btn">
