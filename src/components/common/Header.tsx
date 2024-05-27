@@ -1,10 +1,10 @@
 import React from "react";
 import "../../styles/Main.scss";
 import "../../styles/Header.scss";
-import { GnbList } from "../../model/header";
+import { GnbType } from "../../model/type";
 
 // Gnb list data
-let headerGnbList: GnbList = {
+let gnbData: GnbType = {
   list: [
     { name: "HOME" },
     { name: "NEWS" },
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       </h1>
       <nav>
         <ul className="gnb">
-          {headerGnbList.list.map((data, index) => (
+          {gnbData.list.map((data, index) => (
             <li key={index}>
               <a href="#none">{data.name}</a>
             </li>
