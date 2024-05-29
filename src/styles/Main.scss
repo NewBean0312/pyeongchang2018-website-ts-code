@@ -32,7 +32,7 @@ $max-width: 1132px;
 
 .divider {
   width: 90%;
-  min-width: $max-width;
+  max-width: $max-width;
   margin: 0 auto;
   margin-top: 77px;
   background-color: #eee;
